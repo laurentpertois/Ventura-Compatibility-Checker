@@ -13,13 +13,13 @@ These last 2 requirements can be modified in the first 2 variables (`MINIMUMRAM`
  
 
 ## Mac Hardware Requirements and equivalent as minimum Model Identifier
- 	- MacBook (2017 or newer), ie MacBook9,1
- 	- MacBook Pro (2017 or newer), ie MacBookPro12,1
- 	- MacBook Air (2018 or newer), ie MacBookAir7,1
- 	- Mac mini (2018 or newer), ie Macmini7,1
- 	- iMac (2017 or newer), ie iMac16,1
+ 	- MacBook (2017 or newer), ie MacBook10,1
+ 	- MacBook Pro (2017 or newer), ie MacBookPro14,1
+ 	- MacBook Air (2018 or newer), ie MacBookAir8,1
+ 	- Mac mini (2018 or newer), ie Macmini8,1
+ 	- iMac (2017 or newer), ie iMac18,1
  	- iMac Pro, ie iMacPro1,1
- 	- Mac Pro (2019 or newer), ie MacPro6,1
+ 	- Mac Pro (2019 or newer), ie MacPro7,1
 
 Default compatibility is set to False if no test pass (variable `COMPATIBILITY`)
 
