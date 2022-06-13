@@ -114,7 +114,7 @@ if [[ "$OSVERSIONMAJOR" -ge 13 && "$OSVERSIONMAJOR" -le 21 ]]; then
 
 	# Gets the Model Identifier, splits name and major version
 	MODELIDENTIFIER=$(/usr/sbin/sysctl -n hw.model)
-	MODELNAME=$(echo "$MODELIDENTIFIER" | sed 's/[^a-zA-Z]//g')
+	MODELNAME=${MODELIDENTIFIER//[^a-zA-Z]/}
 	MODELVERSION=$(echo "$MODELIDENTIFIER" | sed -e 's/[^0-9,]//g' -e 's/,//')
 
 	# Gets amount of memory installed
