@@ -65,6 +65,8 @@
 # 	- iMac (2017 or newer), ie iMac18,1
 # 	- iMac Pro, ie iMacPro1,1
 # 	- Mac Pro (2019 or newer), ie MacPro7,1
+# 	- Mac Studio (2022 or newer), ie Mac13,1
+#	- MacBook Air M2 (2022 or newer), ie Mac14,1
 #
 #
 # Default compatibility is set to False if no test pass (variable COMPATIBILITY)
@@ -138,6 +140,8 @@ if [[ "$OSVERSIONMAJOR" -ge 13 && "$OSVERSIONMAJOR" -le 21 ]]; then
 	    COMPATIBILITY="True"
 	elif [[ "$MODELNAME" == "MacBookPro" && "$MODELVERSION" -ge 140 && "$MEMORYINSTALLED" -ge "$MINIMUMRAM" && "$FREESPACE" -ge "$MINIMUMSPACE" ]]; then
 	    COMPATIBILITY="True"
+	elif [[ "$MODELNAME" == "Mac" && "$MODELVERSION" -ge 130 && "$MEMORYINSTALLED" -ge "$MINIMUMRAM" && "$FREESPACE" -ge "$MINIMUMSPACE" ]]; then
+	    COMPATIBILITY="True"	    
 	fi
 	# Outputs result
 	echo "<result>$COMPATIBILITY</result>"

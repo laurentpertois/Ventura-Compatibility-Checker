@@ -20,6 +20,8 @@ These last 2 requirements can be modified in the first 2 variables (`MINIMUMRAM`
  	- iMac (2017 or newer), ie iMac18,1
  	- iMac Pro, ie iMacPro1,1
  	- Mac Pro (2019 or newer), ie MacPro7,1
+ 	- Mac Studio (2022 or newer), ie Mac13,1
+ 	- MacBook Air M2 (2022 or newer), ie Mac14,1
 
 Default compatibility is set to False if no test pass (variable `COMPATIBILITY`)
 
